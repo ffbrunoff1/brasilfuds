@@ -1,4 +1,4 @@
-// tailwind.config.js (Corrigido e limpo)
+// tailwind.config.js (Versão Definitiva)
 
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
@@ -7,18 +7,49 @@ import typography from '@tailwindcss/typography';
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
+    // NÃO coloque cores aqui. Deixe o Tailwind usar suas cores padrão.
+    // Nós vamos ADICIONAR as nossas cores dentro do 'extend'.
     extend: {
+      // É AQUI que definimos nossas customizações
       colors: {
         primary: {
-          500: '#004080',
+          50: '#e6f0ff',
+          100: '#ccdff9',
+          200: '#99c0f2',
+          300: '#66a0ec',
+          400: '#3381e5',
+          500: '#004080', // Sua cor base
           600: '#003366',
-          700: '#00264d', // <-- LINHA ADICIONADA
+          700: '#00264d',
+          800: '#001a33',
+          900: '#000d1a',
+          950: '#00070d',
         },
         secondary: {
-          500: '#0080ff',
+          50: '#e6f2ff',
+          100: '#cce6ff',
+          200: '#99ceff',
+          300: '#66b7ff',
+          400: '#33a0ff',
+          500: '#0080ff', // Sua cor base
+          600: '#0066cc',
+          700: '#004d99',
+          800: '#003366',
+          900: '#001a33',
+          950: '#000d1a',
         },
         accent: {
-          500: '#40a8c4',
+          50: '#ecf6f9',
+          100: '#d9eef2',
+          200: '#b3dde6',
+          300: '#8ccbd9',
+          400: '#66bace',
+          500: '#40a8c4', // Sua cor base
+          600: '#33869d',
+          700: '#266576',
+          800: '#1a434e',
+          900: '#0d2227',
+          950: '#071114',
         },
       },
       animation: {
