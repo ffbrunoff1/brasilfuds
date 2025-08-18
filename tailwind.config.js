@@ -1,3 +1,5 @@
+// tailwind.config.js (Corrigido e limpo)
+
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 
@@ -6,11 +8,11 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-       // tailwind.config.js (Formato corrigido)
       colors: {
         primary: {
           500: '#004080',
-          600: '#003366', // <-- LINHA ADICIONADA
+          600: '#003366',
+          700: '#00264d', // <-- LINHA ADICIONADA
         },
         secondary: {
           500: '#0080ff',
