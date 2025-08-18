@@ -6,15 +6,14 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-       colors: {
+       // tailwind.config.js (Formato corrigido)
+      colors: {
         primary: {
-          500: '#004080', // Agora a classe 'primary-500' existe
-          // Você pode adicionar outras tonalidades aqui no futuro se precisar
-          // 400: '#...',
-          // 600: '#...',
+          500: '#004080',
+          600: '#003366', // <-- LINHA ADICIONADA
         },
         secondary: {
-          500: '#0080ff', // É uma boa prática fazer o mesmo para as outras cores
+          500: '#0080ff',
         },
         accent: {
           500: '#40a8c4',
