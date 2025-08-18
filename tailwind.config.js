@@ -6,10 +6,19 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      colors: {
-        primary: '#004080',
-        secondary: '#0080ff',
-        accent: '#40a8c4',
+       colors: {
+        primary: {
+          500: '#004080', // Agora a classe 'primary-500' existe
+          // Você pode adicionar outras tonalidades aqui no futuro se precisar
+          // 400: '#...',
+          // 600: '#...',
+        },
+        secondary: {
+          500: '#0080ff', // É uma boa prática fazer o mesmo para as outras cores
+        },
+        accent: {
+          500: '#40a8c4',
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',
